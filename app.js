@@ -4,7 +4,7 @@ var quinventApp = angular.module('quinventApp', ['ui.router'])
 
         $stateProvider
             .state('home', {
-                url: '/home',
+                url: '/',
                 templateUrl: 'pages/home.html',
             })
             .state('about', {
