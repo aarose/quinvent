@@ -7,15 +7,13 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Landing page for Quinvent">
     <meta name="author" content="aarose">
-    <!--link rel="icon" href="../../favicon.ico"-->
+    <link rel="icon" href="/img/favicon.ico">
 
     <title>Quinvent</title>
 
-    <!-- Bootstrap core CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,700' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,33 +24,18 @@
 
   <body>
 
-    <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
+    <nav class="navbar" ng-include="'pages/nav.html'">
+    </nav>
 
-        <div class="cover-container">
-
-          <div class="masthead clearfix" ng-include="'pages/nav.html'">
-          </div>
-
-          <div class="inner cover" ui-view>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
-
-        </div>
-
+    <div class="container-fluid" id="main">
+      <div ui-view>
       </div>
+
 
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Bootstrap JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 

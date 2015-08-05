@@ -1,0 +1,101 @@
+html,
+body {
+  height: 100%;
+  background-color: #b0848a;
+}
+body {
+  color: #fff;
+  text-align: center;
+  background: -webkit-linear-gradient(#e8b092, #c79795); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#e8b092, #c79795); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#e8b092, #c79795); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#e8b092, #c79795); /* Standard syntax */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.logo {
+  background: url('../img/quinvent_logo_coloured.png');
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  float: left;
+}
+
+nav {
+  background: none;
+  height: 75px;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+.navbar-brand,
+.navbar li a {
+  color: #f5e2c1;
+}
+
+.nav>li{display: inline-block;}
+.navbar-brand {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 25px;
+  height: 70px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.navbar li a {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-shadow: none;
+  text-transform: uppercase;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar-nav {
+  height: 70px;
+  padding-top: 10px;
+}
+
+.navbar li a:focus,
+.navbar li a:hover{
+  background: none;
+}
+.navbar li.active a{
+  color: #f9edd9;
+  border-bottom: 2px solid #f9edd9;
+}
+
+#main {
+  padding-top: 150px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .logo, .navbar-brand {
+    float: none;
+  }
+  #main {
+    padding-top: 200px;
+  }
+  .navbar-brand{
+    padding-left: 5px;
+    padding-top: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .logo, .nabar-brand {
+    float: left;
+  }
+}
