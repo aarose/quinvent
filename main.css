@@ -15,9 +15,6 @@ body {
 }
 
 .logo {
-  background: url('img/quinvent_logo_coloured.png');
-  background-size: 60px 60px;
-  background-repeat: no-repeat;
   height: 60px;
   width: 60px;
   display: inline-block;
